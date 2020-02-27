@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(203, 235, 255);
+    font-family: monospace;
+    background-image: url('84980.jpg');
+}
+
+.container{
+    width: 99%;
+    text-align: center;
+}
+
+div{
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+}
