@@ -5,7 +5,7 @@
     <head>
     <title>quiz</title>
     <meta charset ="utf-8">
-    <link rel="stylesheet" href="css/page.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
     </head>
 
     <center>
@@ -20,14 +20,21 @@
         <main>
             <div class="container">
                 <h2>Test your knowlege.</h2>
+                <img src="img/marvel studios.jpg" alt="Avengers">
 
-                <p>This is a mutiple choice quiz about the Marval Universe.</p>
+                <h3>This is a mutiple choice quiz about the Marval Universe.</h3>
                 <ul>
-                    <li><strong>Number of questions:</strong> 20</li>
-                    <li><strong>Type:</strong> Multiple choice</li>
-                    <li><strong>Estimated Time:</strong> 20 minutes</li>
+                    <strong>Type:</strong> Multiple choice <br>
+                    <strong>Number of questions:</strong> 20 <br>
+                    <strong>Estimated Time:</strong> 10 minutes <br>
                 </ul>
-                <a href="question.php?n=1" class="start">Start Quiz</a>
+
+                <form action="start.php" method="post" class="container">
+                    <p>User Details:</p>
+                    <input type="text" name="name" placeholder="name" required>
+                    <input type="text" name="surname" placeholder="surname" required><br>
+                    <button ><a href="question.php?n=1" class="start">Start Quiz</a></button>
+                </form>
             </div>
         </main>
 

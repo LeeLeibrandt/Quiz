@@ -4,11 +4,11 @@
     <head>
     <title>quiz</title>
     <meta charset ="utf-8">
-    <link  rel="stylesheet" href="css/pagetwo.css" text="text/css"> 
+    <link  rel="stylesheet" href="css/style.css" text="text/css"> 
     </head>
 
     <body>
-    
+        <center>
         <header>
             <div class="container">
                 <h1>Questions are as follows:</h1>
@@ -149,7 +149,7 @@
 
             <div class="question">Question 6 of 20</div>
             <div class="container">
-            <img  class="groot" src="img/baby-groot-guardians.0.0.jpg" alt="Avengers">
+            <img  class="groot" src="img/guardiansofthegalaxy2-babygroot-detonator1.jpg" alt="Avengers">
                 <h3>Which Guardian of the Galaxy did Thor take the time to introduce to Captain America while they were already fighting enemies in "Avengers: Infinity War"?</h3> 
                 <div>
                     <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" />
@@ -513,33 +513,29 @@
             <div class="question">Question 20 of 20</div>
             <div class="container">
             <img src="img/banner-912x456.jpg" alt="Avengers">
-            <h3>How did TV Hulk Lou Ferrigno contribute to the Avengers films?</h3>
-                    
+            <h3>What was the line Hulk used.</h3>  
                     <div>
                         <input type="radio" name="question-20-answers" id="question-20-answers-A" value="A" />
-                        <label for="question-20-answers-A">A) In a cameo</label>
+                        <label for="question-20-answers-A">A) Cheese</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-20-answers" id="question-20-answers-B" value="B" />
-                        <label for="question-20-answers-B">B) Stunt double</label> 
+                        <label for="question-20-answers-B">B) Hulk smash</label> 
                     </div>
                     
                     <div>
                         <input type="radio" name="question-20-answers" id="question-20-answers-C" value="C" />
-                        <label for="question-20-answers-C">C) Acting coach</label> 
+                        <label for="question-20-answers-C">C) Green</label> 
                     </div>
                     
                     <div>
                         <input type="radio" name="question-20-answers" id="question-20-answers-D" value="D" />
-                        <label for="question-20-answers-D">D) Voice actor</label> 
+                        <label for="question-20-answers-D">D) Time trave</label> 
                     </div>
             </div><br>
 
-
-
-           <center><input type="submit" value="Submit" class="submitbtn" />
-           <!-- <a href="question1.php?n=1" class="start">Next Section</a> -->
+           <input type="submit" value="Submit" class="submitbtn" />
         </form>        
         
         <footer>
