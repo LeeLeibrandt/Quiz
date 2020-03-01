@@ -19,7 +19,7 @@
 		
         <div class="question">Question 1 of 20</div>
             <div class="container">
-                <img src="img/Iron_Man_Kid.0.jpg" alt="Avengers">
+                <img src="img/avengers-infinity-war-doctor-strange-iron-man.jpg" alt="Avengers">
                 <h3>Both Iron Man and Doctor Strange actors played which identical role outside the MCU?</h3>
                             
                 <div>
@@ -97,7 +97,7 @@
 
             <div class="question">Question 4 of 20</div>
             <div class="container">
-            <img src="img/UNADJUSTEDNONRAW_thumb_377.jpg" alt="Avengers">
+            <img src="img/4IWz7gr.gif" alt="Avengers">
                 <h3>Can you recall which fallen hero said "I don't feel so good" during The Snap?</h3>
                         
                 <div>
@@ -107,7 +107,7 @@
                         
                 <div>
                     <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
-                    <label for="question-4-answers-B">B) War Machine</label>
+                    <label for="question-4-answers-B">B) Pete Quill</label>
                 </div>
                         
                 <div>
@@ -149,7 +149,7 @@
 
             <div class="question">Question 6 of 20</div>
             <div class="container">
-            <img  class="groot" src="img/guardiansofthegalaxy2-babygroot-detonator1.jpg" alt="Avengers">
+            <img  class="groot" src="img/1_ikjw3vaNeoG8CT7U-MvNWg.jpeg" alt="Avengers">
                 <h3>Which Guardian of the Galaxy did Thor take the time to introduce to Captain America while they were already fighting enemies in "Avengers: Infinity War"?</h3> 
                 <div>
                     <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" />
@@ -200,7 +200,7 @@
 
             <div class="question">Question 8 of 20</div>
             <div class="container">
-            <img src="img/captain-america-black-widow.jpg" alt="Avengers">
+            <img src="img/f06c9edcd6d18c21c9780266d3b1b80a.gif" alt="Avengers">
                 <h3>Aside from Thor, who among the original Avengers gang was worthy of handling his hammer?</h3>
                     
                 <div>
@@ -382,12 +382,12 @@
 
             <div class="question">Question 15 of 20</div>
             <div class="container">
-            <img src="img/AntManRunTime.png" alt="Avengers">
+            <img src="img/avengers-endgame-second-trailer-ant-man-in-battle.jpg" alt="Avengers">
             <h3>In the comics, this hero was part of the original Avengers but they rewrote this role in the MCU. Do you know who?</h3>
                     
                     <div>
                         <input type="radio" name="question-15-answers" id="question-15-answers-A" value="A" />
-                        <label for="question-15-answers-A">A) The Punisher</label>
+                        <label for="question-15-answers-A">A) Black Panther</label>
                     </div>
                     
                     <div>
@@ -397,7 +397,7 @@
                     
                     <div>
                         <input type="radio" name="question-15-answers" id="question-15-answers-C" value="C" />
-                        <label for="question-15-answers-C">C) Ghost Rider</label> 
+                        <label for="question-15-answers-C">C) Doctor Strange</label> 
                     </div>
                     
                     <div>
@@ -513,7 +513,7 @@
             <div class="question">Question 20 of 20</div>
             <div class="container">
             <img src="img/banner-912x456.jpg" alt="Avengers">
-            <h3>What was the line Hulk used.</h3>  
+            <h3>What was the line Hulk used in this scene?</h3>  
                     <div>
                         <input type="radio" name="question-20-answers" id="question-20-answers-A" value="A" />
                         <label for="question-20-answers-A">A) Cheese</label>
@@ -531,11 +531,15 @@
                     
                     <div>
                         <input type="radio" name="question-20-answers" id="question-20-answers-D" value="D" />
-                        <label for="question-20-answers-D">D) Time trave</label> 
+                        <label for="question-20-answers-D">D) Time travel</label> 
                     </div>
-            </div><br>
+            </div><br><br>
 
-           <input type="submit" value="Submit" class="submitbtn" />
+            <div class="button">
+                <input type="submit" value="Submit" class="submitbtn" />
+            </div>
+            <br>
+            <br>
         </form>        
         
         <footer>
