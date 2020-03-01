@@ -11,9 +11,14 @@
     
         <center><header>
             <div class="container">
-                <h1>Congratulations!!!</h1>
+                <h1>Congrats Hero!!!</h1>
             </div>
         </header>
+            <br><br>
+        <div class="img">
+            <img src="img/avengers-infinity-war-all-heroes-wallpaper-3840x1200-894_62.jpg" alt="avenger-logo">
+        </div>
+        <br><br>
 
         <?php
 
@@ -29,7 +34,7 @@
        <main>
             <div class="container">
                 <h2>You're Done!</h2>
-                <p>Congrats! You have complete the test.</p>
+                <p>You have complete the test.</p>
                 <button><a href="index.php?n-1" class="start">Take Again</a>
             </div>
         </main>
@@ -38,9 +43,7 @@
             <h1>Marvel | Results</h1>
                 
             <?php
-                $ave = 10;
-                $min = 0;
-
+        
                 if($_POST)
                 {
                     $answer1 = $_POST['question-1-answers'];
@@ -70,7 +73,7 @@
                 if($_POST)
                 {
                     if ($answer1 == "D") { $totalCorrect++; }
-                    if ($answer2 == "D") { $totalCorrect++; }
+                    if ($answer2 == "C") { $totalCorrect++; }
                     if ($answer3 == "C") { $totalCorrect++; }
                     if ($answer4 == "D") { $totalCorrect++; }
                     if ($answer5 == "C") { $totalCorrect++; }
@@ -92,14 +95,19 @@
                 }
 
                 echo "<div id='results'>$totalCorrect / 20 correct</div>";
+                echo "<br>";
 
-                if($totalCorrect > $ave)
+                $max = 15;
+                $ave = 10;
+                $min = 0;
+
+                if($totalCorrect >= $max)
                 {
                     echo "Outstanding performance! You are a true marvel fan.";
                 }
-                elseif($min < $ave)
+                elseif($totalCorrect <= $ave)
                 {
-                    echo "You scored average.";
+                    echo "Welldone!";
                 }
                 elseif($ave < $min)
                 {
