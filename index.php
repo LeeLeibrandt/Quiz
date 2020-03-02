@@ -28,14 +28,14 @@
                     <strong>Number of questions:</strong> 20 <br>
                     <strong>Estimated Time:</strong> 10 minutes <br>
                 </ul>
-                    <br>
+                <br>
                 <form action="start.php" method="post" class="container">
-                    <p>User Details:</p>
+                    <p>User Details(Optional):</p>
                     <input type="text" name="name" placeholder="name" required>
                     <input type="text" name="surname" placeholder="surname" required><br>
                     <button ><a href="question.php?n=1" class="start">Start Quiz</a></button>
                 </form>
-                
+
                     <?php
 
                         $name = $_POST;
@@ -63,5 +63,4 @@
         </footer>
     
     </body>
-
 </html>
