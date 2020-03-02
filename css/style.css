@@ -9,17 +9,18 @@ body{
 
 .container{
     width: 75%;
-    border: 2px solid rgb(44, 44, 44);;
+    border: 2px solid rgb(37, 37, 37);
     border-radius: 4px;
     line-height: 2rem;
-    color: white;
+    color: rgb(192, 192, 192);
 }
 
 .question{
     display: block;
     height: 30px;
-    background-color: rgb(44, 44, 44);
-    border: 2px solid rgb(44, 44, 44);
+    background-color: rgb(37, 37, 37);
+    border: 2px solid rgb(37, 37, 37);
+    color: rgb(151, 151, 151);
     text-align: center;
     width: 75%;
     margin-top: 5rem;
@@ -28,16 +29,13 @@ body{
     text-transform: uppercase;
     font-size: 20px;
     font-weight: lighter;
-    color: rgb(151, 151, 151);
 }
 
-h3{
-    text-align: center;
+p{
+    font-size: 15px;
 }
 
 img{
-    width: 700px;
-    padding-top: -30px;
-    margin: 0;
-    border-radius: 4px;
+    width: 100%;
+    height: auto;
 }

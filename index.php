@@ -30,7 +30,7 @@
                 </ul>
                 <br>
                 <form action="start.php" method="post" class="container">
-                    <p>User Details(Optional):</p>
+                    <p>User Details(Optional)</p>
                     <input type="text" name="name" placeholder="name" required>
                     <input type="text" name="surname" placeholder="surname" required><br>
                     <button ><a href="question.php?n=1" class="start">Start Quiz</a></button>
