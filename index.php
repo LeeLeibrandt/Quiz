@@ -5,7 +5,7 @@
     <head>
     <title>quiz</title>
     <meta charset ="utf-8">
-    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" text="text/css">
     </head>
 
     <center>
@@ -35,7 +35,24 @@
                     <input type="text" name="surname" placeholder="surname" required><br>
                     <button ><a href="question.php?n=1" class="start">Start Quiz</a></button>
                 </form>
+                
+                    <?php
+
+                        $name = $_POST;
+                        $surname = $_POST;
+
+                        if(!$_POST)
+                        {
+                            if(isset($_POST['name']) . isset($_POST['surname']))
+                            {
+                                echo " Welcome hero: $name $surname !";
+                            }
+                        }    
+
+                    ?>
+
                 <br><br>
+
             </div>
         </main>
 

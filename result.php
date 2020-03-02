@@ -29,6 +29,7 @@
             {
                 echo "User Details: <br> $name $surname";
             }
+            
         ?>
 
        <main>
@@ -99,7 +100,7 @@
 
                 $max = 15;
                 $ave = 10;
-                $min = 0;
+                $min = 5;
 
                 if($totalCorrect >= $max)
                 {
@@ -109,7 +110,7 @@
                 {
                     echo "Welldone!";
                 }
-                elseif($ave < $min)
+                elseif($totalCorrect <= $min)
                 {
                     echo "Please consider retaking the quiz.";
                 }
