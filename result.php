@@ -85,7 +85,7 @@
                         if ($answer15 == "B") { $totalCorrect++; }
                         if ($answer16 == "A") { $totalCorrect++; }
                         if ($answer17 == "C") { $totalCorrect++; }
-                        if ($answer18 == "B") { $totalCorrect++; }
+                        if ($answer18 == "C") { $totalCorrect++; }
                         if ($answer19 == "B") { $totalCorrect++; }
                         if ($answer20 == "D") { $totalCorrect++; }
                     }
@@ -97,22 +97,26 @@
                     $ave = 10;
                     $min = 5;
 
-                    if($totalCorrect >= $max)
+                    if($totalCorrect)
                     {
-                        echo "Outstanding performance! You are a true marvel fan.";
-                    }
-                    elseif($totalCorrect <= $ave)
-                    {
-                        echo "Welldone!";
-                    }
-                    elseif($totalCorrect <= $min)
-                    {
-                        echo "Please consider retaking the quiz.";
+                        if($totalCorrect >= $max)
+                        {
+                            echo "Outstanding performance! You are a true marvel fan.";
+                        }
+                        elseif($totalCorrect >= $ave)
+                        {
+                            echo "Welldone!";
+                        }
+                        elseif($totalCorrect <= $ave)
+                        {
+                            echo "Please consider re-taking test.";
+                        }
                     }
                     else
                     {
-                        echo "Retake quiz!";
+                        echo "Retake test!";
                     }
+
                     echo "<br>";
                     echo "<br>";      
                 ?>

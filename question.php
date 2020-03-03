@@ -435,27 +435,27 @@
 
             <div class="question">Question 17 of 20</div>
             <div class="container">
-                <img src="img/stanlee-1.jpg" alt="Avengers">
-                <p>The last Avenger film didn't have which particular "item" unlike the rest of the MCU films?</p>
+                <img src="img/star-lord-4k-2019-7n.jpg" alt="Avengers">
+                <p>What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?</p>
                     
                 <div>
                     <input type="radio" name="question-17-answers" id="question-17-answers-A" value="A" />
-                    <label for="question-17-answers-A">A) A Stan Lee cameo</label>
+                    <label for="question-17-answers-A">A) Yondu</label>
                 </div>
                     
                 <div>
                     <input type="radio" name="question-17-answers" id="question-17-answers-B" value="B" />
-                    <label for="question-17-answers-B">B) Digital de-aging of actors</label> 
+                    <label for="question-17-answers-B">B) Drax</label> 
                 </div>
                     
                 <div>
                     <input type="radio" name="question-17-answers" id="question-17-answers-C" value="C" />
-                    <label for="question-17-answers-C">C) A post-credits scene</label> 
+                    <label for="question-17-answers-C">C) Star Lord</label> 
                 </div>
                     
                 <div>
                     <input type="radio" name="question-17-answers" id="question-17-answers-D" value="D" />
-                    <label for="question-17-answers-D">D) A crossover character from TV</label>
+                    <label for="question-17-answers-D">D) Star Prince</label>
                 </div>
             </div><br>
 
