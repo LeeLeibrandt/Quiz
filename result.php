@@ -19,17 +19,14 @@
             <img src="img/avengers-infinity-war-all-heroes-wallpaper-3840x1200-894_62.jpg" alt="avenger-logo">
         </div>
         <br><br>
-
         <?php
-
             $name = $_POST;
             $surname = $_POST;
 
             if(isset($_POST['name']) . isset($_POST['surname']))
             {
                 echo "User Details: <br> $name $surname";
-            }
-            
+            }    
         ?>
 
        <main>
@@ -39,8 +36,7 @@
                 <h1>Marvel | Results</h1>
                     
                 <?php
-            
-                    if($_POST)
+                 /*   if($_POST)
                     {
                         $answer1 = $_POST['question-1-answers'];
                         $answer2 = $_POST['question-2-answers'];
@@ -63,9 +59,7 @@
                         $answer19 = $_POST['question-19-answers'];
                         $answer20 = $_POST['question-20-answers'];
                     }
-                    
-                    $totalCorrect = 0;
-                    
+
                     if($_POST)
                     {
                         if ($answer1 == "D") { $totalCorrect++; }
@@ -89,6 +83,26 @@
                         if ($answer19 == "B") { $totalCorrect++; }
                         if ($answer20 == "D") { $totalCorrect++; }
                     }
+                    */
+                    $totalCorrect = 0; 
+                    $answer;
+
+                    if($_POST)
+                    {
+                        for($i = 1; $i < 21; $i++)
+                        {
+                           // $answer[] = $_POST["question- " . $i . " -answers"];
+                            //echo "question-" . $i . "-answers" . "<br>";
+                                
+                        }
+                       /* if($answer == $totalCorrect++)
+                        {
+                            $totalCorrect++;
+                            echo $answer1;
+                        }
+                        */
+                    }
+                    
 
                     echo "<div id='results'>$totalCorrect / 20 correct</div>";
                     echo "<br>";
@@ -109,7 +123,7 @@
                         }
                         elseif($totalCorrect <= $ave)
                         {
-                            echo "Please consider re-taking test.";
+                            echo "You failed! Retake test.";
                         }
                     }
                     else
@@ -122,7 +136,6 @@
                 ?>
 
                 <button><a href="index.php?n-1" class="start">Take Again</a></button>
-
             </div>
         </main>
 

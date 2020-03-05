@@ -1,4 +1,6 @@
-
+<?php 
+  //  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +9,6 @@
     <meta charset ="utf-8">
     <link rel="stylesheet" href="css/style.css" text="text/css">
     </head>
-
     <center>
     <body>
         
@@ -36,23 +37,24 @@
                     <button ><a href="question.php?n=1" class="start">Start Quiz</a></button>
                 </form>
 
-                    <?php
+                <?php
 
-                        $name = $_POST;
-                        $surname = $_POST;
+                    $name = $_POST;
+                    $surname = $_POST;
 
-                        if(!$_POST)
+                    if(!$_POST)
+                    {
+                        if(isset($_POST['name']) . isset($_POST['surname']))
                         {
-                            if(isset($_POST['name']) . isset($_POST['surname']))
-                            {
-                                echo " Welcome hero: $name $surname !";
-                            }
-                        }    
+                            echo " Welcome hero: $name $surname !";
+                        }
+                    }   
+                        
+                    // $_SESSION['myVar'] = $_POST['name] && $_POST['surname'];
+                    //echo $_SESSION['myVar'];
 
-                    ?>
-
+                ?>
                 <br><br>
-
             </div>
         </main>
 
