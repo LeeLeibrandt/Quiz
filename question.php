@@ -142,7 +142,7 @@ $data = [
         "Green"=>"ans20",
         "Time travel"=>"ans20"
     ]
-    
+
 ];  
        
 ?>
