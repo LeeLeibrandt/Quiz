@@ -25,7 +25,7 @@
 
             if(isset($_POST['name']) . isset($_POST['surname']))
             {
-                echo "User Details: <br> $name $surname";
+                echo "User Details: <br /> $name $surname";
             }    
         ?>
 
