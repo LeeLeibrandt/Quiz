@@ -36,106 +36,39 @@
                 <h1>Marvel | Results</h1>
                     
                 <?php
-                 /*   if($_POST)
-                    {
-                        $answer1 = $_POST['question-1-answers'];
-                        $answer2 = $_POST['question-2-answers'];
-                        $answer3 = $_POST['question-3-answers'];
-                        $answer4 = $_POST['question-4-answers'];
-                        $answer5 = $_POST['question-5-answers'];
-                        $answer6 = $_POST['question-6-answers'];
-                        $answer7 = $_POST['question-7-answers'];
-                        $answer8 = $_POST['question-8-answers'];
-                        $answer9 = $_POST['question-9-answers'];
-                        $answer10 = $_POST['question-10-answers'];
-                        $answer11 = $_POST['question-11-answers'];
-                        $answer12 = $_POST['question-12-answers'];
-                        $answer13 = $_POST['question-13-answers'];
-                        $answer14 = $_POST['question-14-answers'];
-                        $answer15 = $_POST['question-15-answers'];
-                        $answer16 = $_POST['question-16-answers'];
-                        $answer17 = $_POST['question-17-answers'];
-                        $answer18 = $_POST['question-18-answers'];
-                        $answer19 = $_POST['question-19-answers'];
-                        $answer20 = $_POST['question-20-answers'];
-                    }
+                $totalCorrect = 0;  
+                $max = 15;
+                $ave = 10;
+                $min = 5;
 
-                    if($_POST)
-                    {
-                        if ($answer1 == "D") { $totalCorrect++; }
-                        if ($answer2 == "C") { $totalCorrect++; }
-                        if ($answer3 == "C") { $totalCorrect++; }
-                        if ($answer4 == "D") { $totalCorrect++; }
-                        if ($answer5 == "C") { $totalCorrect++; }
-                        if ($answer6 == "C") { $totalCorrect++; }
-                        if ($answer7 == "B") { $totalCorrect++; }
-                        if ($answer8 == "A") { $totalCorrect++; }
-                        if ($answer9 == "C") { $totalCorrect++; }
-                        if ($answer10 == "C") { $totalCorrect++; }
-                        if ($answer11 == "C") { $totalCorrect++; }
-                        if ($answer12 == "D") { $totalCorrect++; }
-                        if ($answer13 == "C") { $totalCorrect++; }
-                        if ($answer14 == "C") { $totalCorrect++; }
-                        if ($answer15 == "B") { $totalCorrect++; }
-                        if ($answer16 == "A") { $totalCorrect++; }
-                        if ($answer17 == "C") { $totalCorrect++; }
-                        if ($answer18 == "C") { $totalCorrect++; }
-                        if ($answer19 == "B") { $totalCorrect++; }
-                        if ($answer20 == "D") { $totalCorrect++; }
-                    }
-                    */
-                    $totalCorrect = 0; 
-                    $answer;
-
-                    if($_POST)
-                    {
-                        for($i = 1; $i < 21; $i++)
-                        {
-                           // $answer[] = $_POST["question- " . $i . " -answers"];
-                            //echo "question-" . $i . "-answers" . "<br>";
-                                
-                        }
-                       /* if($answer == $totalCorrect++)
-                        {
-                            $totalCorrect++;
-                            echo $answer1;
-                        }
-                        */
-                    }
-                    
-
-                    echo "<div id='results'>$totalCorrect / 20 correct</div>";
-                    echo "<br>";
-
-                    $max = 15;
-                    $ave = 10;
-                    $min = 5;
-
+                if ($_POST)
+                {
                     if($totalCorrect)
                     {
                         if($totalCorrect >= $max)
                         {
-                            echo "Outstanding performance! You are a true marvel fan.";
+                            echo "<h3><b>Outstanding performance!</b> You are a true marvel fan.</h3>";
                         }
                         elseif($totalCorrect >= $ave)
                         {
-                            echo "Welldone!";
+                            echo "<h3>Welldone!</h3>";
                         }
                         elseif($totalCorrect <= $ave)
                         {
-                            echo "You failed! Retake test.";
+                            echo "<h3>You<b><i>failed!</i></b> Retake test.</h3>";
                         }
                     }
                     else
                     {
-                        echo "Retake test!";
+                        echo "<h3>Retake test!</h3>";
                     }
+                }
 
-                    echo "<br>";
-                    echo "<br>";      
+                echo "<br>";
+                echo "<div class='container'>Your final amount is: <br />$totalCorrect / 20 correct</div>";
                 ?>
 
-                <button><a href="index.php?n-1" class="start">Take Again</a></button>
+            <button><a href="index.php?n-1" class="start">Take Again</a></button>
             </div>
         </main>
 
@@ -144,8 +77,6 @@
                 Copyright &copy 2020, Lee Lebrandt.
             </div>
         </footer>
-      
-        
+         
     </body>
-
 </html>

@@ -30,7 +30,7 @@
                     <strong>Estimated Time:</strong> 10 minutes <br>
                 </ul>
                 <br>
-                <form action="start.php" method="post" class="container">
+                <form action="reslut.php" method="post" class="container">
                     <p>User Details(Optional)</p>
                     <input type="text" name="name" placeholder="name" required>
                     <input type="text" name="surname" placeholder="surname" required><br>
@@ -42,7 +42,7 @@
                     $name = $_POST;
                     $surname = $_POST;
 
-                    if(!$_POST)
+                    if($_POST)
                     {
                         if(isset($_POST['name']) . isset($_POST['surname']))
                         {
