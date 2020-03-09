@@ -133,7 +133,7 @@
             "Thanos"=>"ans19"
         ],
 
-        'What was the line Hulk used in this scene?'=>[
+        'What was the line Hulk used in the scene when creating the time machine?'=>[
             "Cheese"=>"ans20",
             "Hulk smash"=>"ans20",
             "Green"=>"ans20",
@@ -162,7 +162,7 @@
         </header>
 
         <br>
-        <form action="question.php" method="post" id="quiz">
+        <form action="result.php" method="post" id="quiz">
             <?php foreach ($data as $key => $value) : ?>
 
                 <div class="container">
@@ -177,151 +177,7 @@
                 </div>
 
             <?php endforeach ?> 
-
-            <?php 
-             
-               if($_POST)
-                {
-                    $answer[0] = $_POST['ans1'];
-                    $answer[1] = $_POST['ans2'];
-                    $answer[2] = $_POST['ans3'];
-                    $answer[3] = $_POST['ans4'];
-                    $answer[4] = $_POST['ans5'];
-                    $answer[5] = $_POST['ans6'];
-                    $answer[6] = $_POST['ans7'];
-                    $answer[7] = $_POST['ans8'];
-                    $answer[8] = $_POST['an9'];
-                    $answer[9] = $_POST['ans10'];
-                    $answer[10] = $_POST['ans11'];
-                    $answer[11] = $_POST['ans12'];
-                    $answer[12] = $_POST['ans13'];
-                    $answer[13] = $_POST['ans14'];
-                    $answer[14] = $_POST['ans15'];
-                    $answer[15] = $_POST['ans16'];
-                    $answer[16] = $_POST['ans17'];
-                    $answer[17] = $_POST['ans18'];
-                    $answer[18] = $_POST['ans19'];
-                    $answer[19] = $_POST['ans20']; 
-                }
-
-                $totalCorrect = 0;
-
-                if($_POST)
-                {
-                    if ($answer[0] ) 
-                    {
-                        $totalCorrect++;
-                    } 
-                    if ($answer[1] == $data[1])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[2] == $data[2])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[3] == $data[3])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[4] == $data[4] )
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[5] == $data[5])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[6] == $data[6])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[7] == $data[7])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[8] == $data[8])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[9] == $data[9])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[10] == $data[10])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[11] == $data[11])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[12] == $data[12])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[13] == $data[13])
-                    { 
-                        $totalCorrect++;
-                    }
-                    if ($answer[14] == $data[14])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[15] == $data[15])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[16] == $data[16])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[17] == $data[17])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[18] == $data[18])
-                    {
-                        $totalCorrect++;
-                    }
-                    if ($answer[19] == $data[19])
-                    {
-                        $totalCorrect++;
-                    }
-                } 
-
-                $totalCorrect = 0;  
-                $max = 15;
-                $ave = 10;
-                $min = 5;
-
-                if ($_POST)
-                {
-                    if($totalCorrect)
-                    {
-                        if($totalCorrect >= $max)
-                        {
-                            echo "<h3><b>Outstanding performance!</b> You are a true marvel fan.</h3>";
-                        }
-                        elseif($totalCorrect >= $ave)
-                        {
-                            echo "<h3>Welldone!</h3>";
-                        }
-                        elseif($totalCorrect <= $ave)
-                        {
-                            echo "<h3>You<b><i>failed!</i></b> Retake test.</h3>";
-                        }
-                    }
-                    else
-                    {
-                        echo "<h3>Retake test!</h3>";
-                    }
-                }
-
-                echo "<br>";
-                echo "<div class='container'>Your final amount is: <br />$totalCorrect / 20 correct</div>";
-               
-            ?>
+            
             <br>
                 <input type="submit" value="Submit" class="submitbtn" />
             <br><br>
