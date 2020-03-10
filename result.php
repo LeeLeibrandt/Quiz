@@ -45,7 +45,7 @@
                         
                         echo "<div class='container'>" ;
                             
-                        if ($counter == $answes) 
+                        if ($counter == $Answers) 
                         { 
                             $counter++;
                         echo $results = "Your score: $counter/20"; 
