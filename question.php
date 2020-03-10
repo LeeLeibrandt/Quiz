@@ -1,149 +1,247 @@
-<?php
-    $data = array(
-        'Both Iron Man and Doctor Strange actors played which identical role outside the MCU?'=>[
-        "Willie Wonka"=>"ans1",
-        "Dracula"=>"ans1",
-        "Jack the Ripper"=>"ans1",
-        "Sherlock Holmes"=>"ans1"
-        ],
+    <?php
+    //init array questions & options &answers
+        $Questions = array(       
+            1 =>array(
+                'Question' => '1. Both Iron Man and Doctor Strange actors played which identical role outside the MCU?',
+                'Answers' => array(
+                    'A' => 'Willie Wonka',
+                    'B' => 'Dracula',
+                    'C' => 'Jack the Ripper',
+                    'D' => 'Sherlock Holmes'
+                ),
+                'correctAnswer' => 'D'
+            ),
 
-        'Before turning whitish-blonde, what was Natasha Romanoff original hair color?'=>[
-            "Brown"=>"ans2",
-            "Black"=>"ans2",
-            "Red"=>"ans2",
-            "Purple"=>"ans2"
-        ],
+            2 =>array(
+                'Question' => '2. Before turning whitish-blonde, what was Natasha Romanoff original hair color?',
+                'Answers' => array(
+                    'A' => 'Brown',
+                    'B' => 'Black',
+                    'C' => 'Red',
+                    'D' => 'Purple'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'What do you call that gadget which Nick Fury used to contact Captain Marvel?'=>[
-            "Walkie-Talkie"=>"ans3",
-            "I Pad"=>"ans3",
-            "Pager"=>"ans3",
-            "Nokia Phone"=>"ans3"
-        ],
+            3 =>array(
+                'Question' => '3. What do you call that gadget which Nick Fury used to contact Captain Marvel?',
+                'Answers' => array(
+                    'A' => 'Walkie-Talkie',
+                    'B' => 'I-Pad',
+                    'C' => 'Pager',
+                    'D' => 'Nokia Phone'
+                ),
+                'correctAnswer' => 'C'
+            ),
+            
+            4 =>array(
+                'Question' => '4. Can you recall which fallen hero said "I dont feel so good" during The Snap?',
+                'Answers' => array(
+                    'A' => 'Doctor Strange',
+                    'B' => 'Pete Quill',
+                    'C' => 'Black Panther',
+                    'D' => 'Spider Man'
+                ),
+                'correctAnswer' => 'D'
+            ),
 
-        'Can you recall which fallen hero said "I dont feel so good" during The Snap?'=>[
-            "Doctor Strange"=>"ans4",
-            "Pete Quill"=>"ans4",
-            "Black Panther"=>"ans4",
-            "Spider Man"=>"ans4"
-        ],
+            5 =>array(
+                'Question' => '5. This Avenger ally originally belonged to the X-Men team. Do you know who?',
+                'Answers' => array(
+                    'A' => 'J.A.R.V.I.S.',
+                    'B' => 'Peggy Carter',
+                    'C' => 'Quicksilver',
+                    'D' => 'None of above'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'This Avenger ally originally belonged to the X-Men team. Do you know who?'=>[
-            "J.A.R.V.I.S."=>"ans5",
-            "Peggy Carter"=>"ans5",
-            "Quicksilver"=>"ans5",
-            "None of above"=>"ans5"
-        ],
+            6 =>array(
+                'Question' => '6. Which Guardian of the Galaxy did Thor take the time to introduce to Captain America while they were already fighting enemies in "Avengers: Infinity War"?',
+                'Answers' => array(
+                    'A' => 'Nebula',
+                    'B' => 'Star-Lord',
+                    'C' => 'Groot',
+                    'D' => 'Garmora'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'Which Guardian of the Galaxy did Thor take the time to introduce to Captain America while they were already fighting enemies in "Avengers: Infinity War"?'=>[
-            "Nebula"=>"ans6",
-            "Star-Lord"=>"ans6",
-            "Groot"=>"ans6",
-            "Garmora"=>"ans6"
-        ],
+            7 =>array(
+                'Question' => '7. Scarlett Johansson had a "special status" while shooting "Avengers: Age of Ultron." What state was she in at that time?',
+                'Answers' => array(
+                    'A' => 'Recovering from an accident',
+                    'B' => 'Pregnant',
+                    'C' => 'Had a major operation',
+                    'D' => 'Getting a divorce'
+                ),
+                'correctAnswer' => 'B'
+            ),
 
-        'Scarlett Johansson had a "special status" while shooting "Avengers: Age of Ultron." What state was she in at that time?'=>[
-            "Recovering from an accident"=>"ans7",
-            "Pregnant"=>"ans7",
-            "Had a major operation"=>"ans7",
-            "Getting a divorce"=>"ans7"
-        ],
+            8 =>array(
+                'Question' => '8. Aside from Thor, who among the original Avengers gang was worthy of handling his hammer?',
+                'Answers' => array(
+                    'A' => 'Captain America',
+                    'B' => 'The Hulk',
+                    'C' => 'Vision',
+                    'D' => 'Iron Man'
+                ),
+                'correctAnswer' => 'A'
+            ),
 
-        'Aside from Thor, who among the original Avengers gang was worthy of handling his hammer?'=>[
-            "Captain America"=>"ans8",
-            "The Hulk"=>"ans8",
-            "Vision"=>"ans8",
-            "Iron Man"=>"ans8"
-        ],
-        
-        'This Avenger friend "hid" in Wakanda. Which one did this in vibranium land?'=>[
-            "Peter Quill"=>"ans9",
-            "Scott Lang"=>"ans9",
-            "Bucky Barnes"=>"ans9",
-            "Sam Wilson"=>"ans9"
-        ],
+            9 =>array(
+                'Question' => '9. This Avenger friend "hid" in Wakanda. Which one did this in vibranium land?',
+                'Answers' => array(
+                    'A' => 'Peter Quill',
+                    'B' => 'Scott Lang',
+                    'C' => 'Bucky Barnes',
+                    'D' => 'Sam Wilson'
+                ),
+                'correctAnswer' => 'C'
+            ),
+            
+            10 =>array(
+                'Question' => '10. Vision came from which of the Infinity Stones?',
+                'Answers' => array(
+                    'A' => 'Mind Stone ',
+                    'B' => 'Time Stone',
+                    'C' => 'Soul Stone',
+                    'D' => 'Power Stone'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'Vision came from which of the Infinity Stones?'=>[
-            "Mind Stone"=>"ans10",
-            "Time Stone"=>"ans10",
-            "Soul Stone"=>"ans10",
-            "Power Stone"=>"ans10"
-        ],
+            11 =>array(
+                'Question' => '11. If the reality stone is red and the power stone is purple, what colors are the soul and space stones?',
+                'Answers' => array(
+                    'A' => 'Green and Pink',
+                    'B' => 'Black and Green',
+                    'C' => 'Orange and Blue',
+                    'D' => 'Brown and Grey'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'If the reality stone is red and the power stone is purple, what colors are the soul and space stones?'=>[
-            "Green and Pink"=>"ans11",
-            "Black and Green"=>"ans11",
-            "Orange and Blue"=>"ans11",
-            "Brown and Grey"=>"ans11"
-        ],
+            12 =>array(
+                'Question' => '12. Can you recall which 80s movie our heroes referenced when they traveled back in time in "Avengers: Endgame"?',
+                'Answers' => array(
+                    'A' => 'Blade Runner',
+                    'B' => 'Star Trek',
+                    'C' => 'Star Wars',
+                    'D' => 'Back to the future'
+                ),
+                'correctAnswer' => 'D'
+            ),
 
-        'Can you recall which 80s movie our heroes referenced when they traveled back in time in "Avengers: Endgame"?'=>[
-            "Blade Runner"=>"ans12",
-            "Star Trek"=>"ans12",
-            "Star Wars"=>"ans12",
-            "Back to the future"=>"ans12"
-        ],
+            13 =>array(
+                'Question' => '13. She had an obvious haircut in one movie alone. Which hero is this?',
+                'Answers' => array(
+                    'A' => 'Gamora',
+                    'B' => 'Maria Hill',
+                    'C' => 'Carol Danvers',
+                    'D' => 'Natasha Romanoff'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'She had an obvious haircut in one movie alone. Which hero is this?'=>[
-            "Gamora"=>"ans13",
-            "Maria Hill"=>"ans13",
-            "Carol Danvers"=>"ans13",
-            "Natasha Romanoff"=>"ans13"
-        ],
+            14 =>array(
+                'Question' => '14. Can you guess which heavy metal band Tony Stark loves, in relation to being Iron Man?',
+                'Answers' => array(
+                    'A' => 'Metallica ',
+                    'B' => 'KISS',
+                    'C' => 'Black Sabbath',
+                    'D' => 'Def Leppard'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'Can you guess which heavy metal band Tony Stark loves, in relation to being Iron Man?'=>[
-            "Metallica"=>"ans14",
-            "KISS"=>"ans14",
-            "Black Sabbath"=>"ans14",
-            "Def Leppard"=>"ans14"
-        ],
+            15 =>array(
+                'Question' => '15. In the comics, this hero was part of the original Avengers but they rewrote this role in the MCU. Do you know who?',
+                'Answers' => array(
+                    'A' => 'Black Panther',
+                    'B' => 'Ant-Man',
+                    'C' => 'Doctor Strange',
+                    'D' => 'Blade'
+                ),
+                'correctAnswer' => 'B'
+            ),
 
-        'In the comics, this hero was part of the original Avengers but they rewrote this role in the MCU. Do you know who?'=>[
-            "Black Panther"=>"ans15",
-            "Ant-Man"=>"ans15",
-            "Doctor Strange"=>"ans15",
-            "Blade"=>"ans15"
-        ],
+            16 =>array(
+                'Question' => '16. Was Thanos Infinity Gauntlet worn on the left hand or the right hand?',
+                'Answers' => array(
+                    'A' => 'Left',
+                    'B' => 'Right',
+                    'C' => 'It was ambidextrous',
+                    'D' => 'Its unclear'
+                ),
+                'correctAnswer' => 'A'
+            ),
 
-        'Was Thanos Infinity Gauntlet worn on the left hand or the right hand?'=>[
-            "Left"=>"ans16",
-            "Right"=>"ans16",
-            "It was ambidextrous"=>"ans16",
-            "It's unclear"=>"ans16"
-        ],
+            17 =>array(
+                'Question' => '17. What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?',
+                'Answers' => array(
+                    'A' => 'Yondu',
+                    'B' => 'Drax',
+                    'C' => 'Star Lord',
+                    'D' => 'Star Prince'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?'=>[
-            "Yondu"=>"ans17",
-            "Drax"=>"ans17",
-            "Star Lord"=>"ans17",
-            "Star Prince"=>"ans17"
-        ],
+            18 =>array(
+                'Question' => '18. After the snap, Thanos "retired" in a garden with a prominent rice terraces landscape. Can you take a wild guess where that actual terraces are located?',
+                'Answers' => array(
+                    'A' => 'New Zealanad ',
+                    'B' => 'Canada ',
+                    'C' => 'Philippines',
+                    'D' => 'Spain'
+                ),
+                'correctAnswer' => 'C'
+            ),
 
-        'After the snap, Thanos "retired" in a garden with a prominent rice terraces landscape. Can you take a wild guess where that actual terraces are located?'=>[
-            "New Zealanad"=>"ans18",
-            "Canada"=>"ans18",
-            "Philippines"=>"ans18",
-            "Spain"=>"ans18"
-        ],
+            19 =>array(
+                'Question' => '19. Whenever Thor is around, which person always reminded him of home?',
+                'Answers' => array(
+                    'A' => 'Valkyrie',
+                    'B' => 'Loki ',
+                    'C' => 'Jane Foster',
+                    'D' => 'Thanos'
+                ),
+                'correctAnswer' => 'B'
+            ),
 
-        'Whenever Thor is around, which person always reminded him of home?'=>[
-            "Valkyrie"=>"ans19",
-            "Loki"=>"ans19",
-            "Jane Foster"=>"ans19",
-            "Thanos"=>"ans19"
-        ],
+            20 =>array(
+                'Question' => '20. What was the line Hulk used in the scene when creating the time machine?',
+                'Answers' => array(
+                    'A' => 'Cheese',
+                    'B' => 'Hulk smash ',
+                    'C' => 'Green',
+                    'D' => 'Time travel'
+                ),
+                'correctAnswer' => 'D'
+            ),
+        ); 
+    ?>
+    <?php    
+    if (isset($_POST['answers'])){
+        // submitted answers.
+        $Answers = $_POST['answers']; 
 
-        'What was the line Hulk used in the scene when creating the time machine?'=>[
-            "Cheese"=>"ans20",
-            "Hulk smash"=>"ans20",
-            "Green"=>"ans20",
-            "Time travel"=>"ans20"
-        ]  
-    ); 
+        foreach ($Questions as $QuestionNo => $Value){  
+            // output the question
+            echo $Value['Question'].'<br />';
 
-   $answer = array(3,2,2,3,2,2,1,0,2,2,2,3,2,2,1,0,2,2,1,3);       
-
-?>
+            if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){ 
+                 echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Value['CorrectAnswer']].'</span>';
+            } else { 
+                echo 'You are correct: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>';
+            }
+            echo'<br />';
+        }  
+    }
+                 
+    ?>
+    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -154,8 +252,7 @@
     </head>
 
     <body>
-        <center>
-        <header>
+       <center><header>
             <div class="container">
                 <h1>Questions are as follows:</h1>
             </div>
@@ -163,25 +260,25 @@
 
         <br>
         <form action="result.php" method="post" id="quiz">
-            <?php foreach ($data as $key => $value) : ?>
-
+            <?php foreach ($Questions as $QuestionNo => $Value) { ?>
+        
                 <div class="container">
-                    <h3 class="label"> <?php echo $key ?> </h3>
-                    <?php foreach ($value as $ques => $attrName) : ?>
-
-                        <input type="radio" name="<?php echo $attrName ?>" value="<?php echo $ques ?>"> 
-                        <label for="radio"><?php echo $ques ?></label>
-                        <br>
-
-                    <?php endforeach ?> 
+                    <h3><?php echo $Value['Question']; ?></h3>
+                            <?php 
+                                foreach ($Value['Answers'] as $Letter => $Answer){ 
+                                $Label = 'question-'.$QuestionNo.'-answers-'.$Letter;
+                            ?>
+                            <div>
+                                <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
+                                <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
+                            </div>
+                    <?php } ?>
                 </div>
-
-            <?php endforeach ?> 
-            
+                <?php } ?> 
+            <?php ?>
             <br>
                 <input type="submit" value="Submit" class="submitbtn" />
             <br><br>
-    
         </form>      
         
         <footer>
