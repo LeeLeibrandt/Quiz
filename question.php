@@ -221,24 +221,6 @@
                 'correctAnswer' => 'D'
             ),
         ); 
-    ?>
-    <?php    
-    if (isset($_POST['answers'])){
-        // submitted answers.
-        $Answers = $_POST['answers']; 
-
-        foreach ($Questions as $QuestionNo => $Value){  
-            // output the question
-            echo $Value['Question'].'<br />';
-
-            if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){ 
-                 echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Value['CorrectAnswer']].'</span>';
-            } else { 
-                echo 'You are correct: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>';
-            }
-            echo'<br />';
-        }  
-    }
                  
     ?>
     
@@ -259,6 +241,7 @@
         </header>
 
         <br>
+
         <form action="result.php" method="post" id="quiz">
             <?php foreach ($Questions as $QuestionNo => $Value) { ?>
         
@@ -271,16 +254,17 @@
                             <div>
                                 <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
                                 <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
-                            </div>
+                            </div>  
                     <?php } ?>
                 </div>
                 <?php } ?> 
             <?php ?>
+
             <br>
                 <input type="submit" value="Submit" class="submitbtn" />
-            <br><br>
-        </form>      
-        
+            <br>
+        </form>    
+     
         <footer>
             <div class="container">
                 Copyright &copy 2020, Lee Leibrandt.

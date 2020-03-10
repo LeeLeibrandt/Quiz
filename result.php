@@ -35,54 +35,46 @@
                 <h1>Marvel | Results</h1>
             
                 <?php
+                
+                    if (isset($_POST['Answers'])){
+                        // submitted answers.
+                        $Answers = $_POST['Answers']; 
+
+                        foreach ($Questions as $QuestionNo => $Value){  
+                            // output the question
+                            echo $Value['Question'].'<br />';
+
+                            if ($Answers[$QuestionNo] != $Value['CorrectAnswer'])
+                            { 
+                                echo 'You answered: <span style="color: red;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>';
+                            } 
+                            else
+                            { 
+                                echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>'; 
+                            }
+                            echo'<br />';
+                        }  
+                    }
 
                     if (isset($_POST['answers']))
                     {
                         // submitted answers.
-                        $Answers = $_POST['answers']; 
-                        
-                            $counter = 0;
+                        $Answers = (isset($_POST['answers'])); 
+                        $counter = 0;
                         
                         echo "<div class='container'>" ;
                             
                         if ($counter == $Answers) 
                         { 
                             $counter++;
-                        echo $results = "Your score: $counter/20"; 
+                            echo $results = "Your score: $counter/20"; 
                         }
                         else 
                         { 
                             $counter++;
                             echo $results = "Your score: $counter/20"; 
                         }
-                    }
-                    echo "</div>" ;
-
-                    $max = 15;
-                    $ave = 10;
-                    $min = 5;
-
-                    if ($_POST)
-                    {
-                        if($counter)
-                        {
-                            if($counter >= $max)
-                            {
-                                echo "<h3><b>Outstanding performance!</b> You are a true marvel fan.</h3>";
-                            }
-                            elseif($counter >= $ave)
-                            {
-                                echo "<h3>Welldone!</h3>";
-                            }
-                            elseif ($counter <= $min)
-                            {
-                                echo "<h3>Retake quiz!</h3>";
-                            }
-                        }
-                        else
-                        {
-                            echo "<h3>You <b><i>failed!</i></b> Retake test.</h3>";
-                        }
+                        echo "</div>";
                     }
                 ?>
             
