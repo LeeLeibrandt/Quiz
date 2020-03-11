@@ -51,6 +51,7 @@
                             else
                             { 
                                 echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>'; 
+                                $counter++;
                             }
                             echo'<br />';
                         }  
@@ -66,12 +67,12 @@
                             
                         if ($counter == $Answers) 
                         { 
-                            $counter++;
+                           
                             echo $results = "Your score: $counter/20"; 
                         }
                         else 
                         { 
-                            $counter++;
+                           
                             echo $results = "Your score: $counter/20"; 
                         }
                         echo "</div>";

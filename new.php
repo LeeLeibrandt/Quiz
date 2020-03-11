@@ -1,6 +1,17 @@
-    <?php
-    //init array questions & options &answers
-        $Questions = array(       
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>quiz</title>
+        <meta charset ="utf-8">
+        <link rel="stylesheet" href="css/style.css" text="text/css">
+    </head>
+
+    <body>
+
+    <?php 
+        $Questions = array
+        (
+
             1 =>array(
                 'Question' => '1. Both Iron Man and Doctor Strange actors played which identical role outside the MCU?',
                 'Answers' => array(
@@ -9,7 +20,7 @@
                     'C' => 'Jack the Ripper',
                     'D' => 'Sherlock Holmes'
                 ),
-                'correctAnswer' => 'D'
+                'CorrectAnswer' => 'D'
             ),
 
             2 =>array(
@@ -20,7 +31,7 @@
                     'C' => 'Red',
                     'D' => 'Purple'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             3 =>array(
@@ -31,7 +42,7 @@
                     'C' => 'Pager',
                     'D' => 'Nokia Phone'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
             
             4 =>array(
@@ -42,7 +53,7 @@
                     'C' => 'Black Panther',
                     'D' => 'Spider Man'
                 ),
-                'correctAnswer' => 'D'
+                'CorrectAnswer' => 'D'
             ),
 
             5 =>array(
@@ -53,7 +64,7 @@
                     'C' => 'Quicksilver',
                     'D' => 'None of above'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             6 =>array(
@@ -64,7 +75,7 @@
                     'C' => 'Groot',
                     'D' => 'Garmora'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             7 =>array(
@@ -75,7 +86,7 @@
                     'C' => 'Had a major operation',
                     'D' => 'Getting a divorce'
                 ),
-                'correctAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
 
             8 =>array(
@@ -86,7 +97,7 @@
                     'C' => 'Vision',
                     'D' => 'Iron Man'
                 ),
-                'correctAnswer' => 'A'
+                'CorrectAnswer' => 'A'
             ),
 
             9 =>array(
@@ -97,7 +108,7 @@
                     'C' => 'Bucky Barnes',
                     'D' => 'Sam Wilson'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
             
             10 =>array(
@@ -108,7 +119,7 @@
                     'C' => 'Soul Stone',
                     'D' => 'Power Stone'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             11 =>array(
@@ -119,7 +130,7 @@
                     'C' => 'Orange and Blue',
                     'D' => 'Brown and Grey'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             12 =>array(
@@ -130,7 +141,7 @@
                     'C' => 'Star Wars',
                     'D' => 'Back to the future'
                 ),
-                'correctAnswer' => 'D'
+                'CorrectAnswer' => 'D'
             ),
 
             13 =>array(
@@ -141,7 +152,7 @@
                     'C' => 'Carol Danvers',
                     'D' => 'Natasha Romanoff'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             14 =>array(
@@ -152,7 +163,7 @@
                     'C' => 'Black Sabbath',
                     'D' => 'Def Leppard'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             15 =>array(
@@ -163,7 +174,7 @@
                     'C' => 'Doctor Strange',
                     'D' => 'Blade'
                 ),
-                'correctAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
 
             16 =>array(
@@ -174,7 +185,7 @@
                     'C' => 'It was ambidextrous',
                     'D' => 'Its unclear'
                 ),
-                'correctAnswer' => 'A'
+                'CorrectAnswer' => 'A'
             ),
 
             17 =>array(
@@ -185,7 +196,7 @@
                     'C' => 'Star Lord',
                     'D' => 'Star Prince'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             18 =>array(
@@ -196,7 +207,7 @@
                     'C' => 'Philippines',
                     'D' => 'Spain'
                 ),
-                'correctAnswer' => 'C'
+                'CorrectAnswer' => 'C'
             ),
 
             19 =>array(
@@ -207,102 +218,137 @@
                     'C' => 'Jane Foster',
                     'D' => 'Thanos'
                 ),
-                'correctAnswer' => 'B'
+                'CorrectAnswer' => 'B'
             ),
 
             20 =>array(
-                'Question' => '20. What was the line Hulk used in the scene when creating the time machine?',
+                'Question' => '20. Who is the strongest avenger?',
                 'Answers' => array(
-                    'A' => 'Cheese',
-                    'B' => 'Hulk smash ',
-                    'C' => 'Green',
-                    'D' => 'Time travel'
+                    'A' => 'Iron man',
+                    'B' => 'Hulk ',
+                    'C' => 'Thor',
+                    'D' => 'Captain America'
                 ),
-                'correctAnswer' => 'D'
-            ),
-        ); 
-        if (isset($_POST['answers'])){
-            $Answers = $_POST['answers']; // Get submitted answers.
-        
-            // Now this is fun, automated question checking! ;)
-        
-            foreach ($Questions as $QuestionNo => $Value){
-                // Echo the question
-                echo $Value['Question'].'<br />';
-        
-                if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){
-                    echo '<span style="color: red;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; // Replace style with a class
-                } else {
-                    echo '<span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; // Replace style with a class
+                'CorrectAnswer' => 'B'
+            )
+        );
+
+        if (isset($_POST['answers']))
+        {
+            $Answers = $_POST['answers'];
+            $counter = 0; 
+
+            echo "<center>";
+            echo "<div class='container'>
+                     <h1>Congrats Hero!!!</h1>
+                 </div>";  
+            echo "<div class ='container'> <div class='img'>
+                        <img src='img/avengers-infinity-war-all-heroes-wallpaper-3840x1200-894_62.jpg' alt='avenger-logo'>
+                    </div> </div>";
+            echo "<br>";        
+            echo "<div class='container'>
+                  <h2>You're Done!</h2>
+                  <p>You have complete the test.</p>
+                  <h1>Marvel | Results</h1>";      
+
+                foreach ($Questions as $QuestionNo => $Value){
+                    echo "<div class='cotainer'>";
+                    // Echo the question
+                    echo $Value['Question'].'<br />';
+
+                    if ($Answers[$QuestionNo] != $Value['CorrectAnswer'])
+                    {
+                        echo 'You answered: <span style = "color: red; ">' . $Value['Answers'] [$Answers[$QuestionNo]] . '</span><br>';
+                        echo 'Correct answer: <span style = "color: green; ">' . $Value['Answers'] [$Value['CorrectAnswer']] . '</span>';
+                    } 
+                    else 
+                    {
+                        echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>';
+                        echo 'You are correct: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; 
+                        $counter++;
+                    }
+                    echo "<div>";
+                    echo '<br />';
+                    
+                    if ($counter == 0) 
+                    {                          
+                        $results = "<h3>Your score: $counter/20</h3>"; 
+                    }
+                    else 
+                    { 
+                        $results = "<h3>Your score: $counter/20</h3>"; 
+                    }
                 }
-                echo '<br /><hr>';
-            }
-        } else {
-        ?>
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="quiz">
-            <?php foreach ($Questions as $QuestionNo => $Value){ ?>
-            <li>
-                <h3><?php echo $Value['Question']; ?></h3>
-                <?php 
-                    foreach ($Value['Answers'] as $Letter => $Answer){ 
-                    $Label = 'question-'.$QuestionNo.'-answers-'.$Letter;
-                ?>
-                <div>
-                    <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
-                    <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
-                </div>
-                <?php } ?>
-            </li>
-            <?php } ?>
-            <input type="submit" value="Submit Quiz" />
-            </form>
-        <?php 
+
+                $min = 5;
+                $ave = 10;
+                $max = 15;
+                $ultra = 17;
+
+                if ($counter)
+                {
+                    if ($ultra <= $counter)
+                    {
+                        echo "<span style = 'color: purple;'><h3>Outstanding performance! You are a true marvel fan.</span></h3>";
+                    }
+                    elseif ($counter >= $max)
+                    {
+                        echo "<span style = 'color: green;'> <h3>Welldone Hero!.</span></h3>";
+                    }
+                    elseif($max <= $ave)
+                    {
+                        echo "<span style = 'color: green;'> <h3>Welldone Hero!.</span></h3>";
+                    }
+                    elseif ($counter >= $ave)
+                    {
+                        echo "<span style = 'color: orange;'><h3>You scroed averaged.</span></h3>";
+                    }
+                    elseif ($min <= $counter)
+                    {
+                        echo "<span style = 'color: red;'> <h3>You performed poorly! Retake test.</span></h3>";
+                    }
+                }
+                else
+                {
+                    echo "<span style = 'color: red;'> <h3>Retake test.</span></h3>";
+                }
+            
+                echo "<br>";
+                echo $results;
+                echo "<button><a href='index.php?n-1' class='start'>Take Again</a></button>";
+        } 
+        else
+        {  
+            ?>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="quiz">
+                    <?php foreach ($Questions as $QuestionNo => $Value){ ?>
+
+                        <center><div class = 'container'>
+                            <img src="img/AVENGERS LOGO VERSION 2.png" alt="">
+                            <h3><?php echo $Value['Question']; ?></h3>
+                            <?php 
+                                foreach ($Value['Answers'] as $Letter => $Answer){ 
+                                $Label = 'question-'.$QuestionNo.'-answers-'.$Letter;
+                            ?>
+                            <div>
+                                <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" required/>
+                                <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
+                            </div>
+                            <?php } ?>
+                        </div>
+
+                    <?php } ?><br><br>
+                    <input type="submit" value="Process" />
+                    <br><br>
+                </form>
+
+                <footer>
+                    <div class="container">
+                        Copyright &copy 2020, Lee Leibrandt.
+                    </div>
+                </footer>
+            <?php 
         }
-        ?>
-            
-    ?>
-    
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-    <title>quiz</title>
-    <meta charset ="utf-8">
-    <link  rel="stylesheet" href="css/style.css" text="text/css"> 
-    </head>
-
-    <body>
-       <center><header>
-            <div class="container">
-                <h1>Questions are as follows:</h1>
-            </div>
-        </header>
-
-        <br>
-
-        <form action="question.php" method="post" id="quiz">
-            
-
-            <main>
-            <div class="container">
-                <h2>You're Done!</h2>
-                <p>You have complete the test.</p>
-                <h1>Marvel | Results</h1>
-            
-              
-                
-                  
-            </div>
-            <br>
-                <input type="submit" value="Submit" class="submitbtn" />
-            <br>
-        </form>    
-    
-        <footer>
-            <div class="container">
-                Copyright &copy 2020, Lee Leibrandt.
-            </div>
-        </footer>
-              
+    ?>   
     </body>
 </html>

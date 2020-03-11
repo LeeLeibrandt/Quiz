@@ -29,32 +29,7 @@
                     <strong>Number of questions:</strong> 20 <br>
                     <strong>Estimated Time:</strong> 10 minutes <br>
                 </ul>
-                <br>
-                <form action="reslut.php" method="post" class="container">
-                    <p>User Details(Optional)</p>
-                    <input type="text" name="name" placeholder="name" required>
-                    <input type="text" name="surname" placeholder="surname" required><br>
-                    <button ><a href="question.php?n=1" class="start">Start Quiz</a></button>
-                </form>
-
-                <?php
-
-                    $name = $_POST;
-                    $surname = $_POST;
-
-                    if($_POST)
-                    {
-                        if(isset($_POST['name']) . isset($_POST['surname']))
-                        {
-                            echo " Welcome hero: $name $surname !";
-                        }
-                    }   
-                        
-                    // $_SESSION['myVar'] = $_POST['name] && $_POST['surname'];
-                    //echo $_SESSION['myVar'];
-
-                ?>
-                <br><br>
+                <button ><a href="new.php?n=1" class="start">Start Quiz</a></button>
             </div>
         </main>
 
