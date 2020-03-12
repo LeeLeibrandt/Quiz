@@ -9,7 +9,7 @@
     <body>
 
     <?php 
-        $Questions = array
+        $Question = array
         (
 
             1 =>array(
@@ -236,7 +236,7 @@
         if (isset($_POST['answers']))
         {
             $Answers = $_POST['answers'];
-            $counter = 0; 
+            $correct = 0; 
 
             echo "<center>";
             echo "<div class='container'>
@@ -251,7 +251,7 @@
                   <p>You have complete the test.</p>
                   <h1>Marvel | Results</h1>";      
 
-                foreach ($Questions as $QuestionNo => $Value){
+                foreach ($Question as $QuestionNo => $Value){
                     echo "<div class='cotainer'>";
                     // Echo the question
                     echo $Value['Question'].'<br />';
@@ -265,18 +265,18 @@
                     {
                         echo 'Correct answer: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br>';
                         echo 'You are correct: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span>'; 
-                        $counter++;
+                        $correct++;
                     }
                     echo "<div>";
                     echo '<br />';
                     
-                    if ($counter == 0) 
+                    if ($correct == 0) 
                     {                          
-                        $results = "<h3>Your score: $counter/20</h3>"; 
+                        $results = "<h3>Your score: $correct/20</h3>"; 
                     }
                     else 
                     { 
-                        $results = "<h3>Your score: $counter/20</h3>"; 
+                        $results = "<h3>Your score: $correct/20</h3>"; 
                     }
                 }
 
@@ -285,25 +285,25 @@
                 $max = 15;
                 $ultra = 17;
 
-                if ($counter)
+                if ($correct)
                 {
-                    if ($ultra <= $counter)
+                    if ($ultra <= $correct)
                     {
                         echo "<span style = 'color: purple;'><h3>Outstanding performance! You are a true marvel fan.</span></h3>";
                     }
-                    elseif ($counter >= $max)
+                    elseif ($correct >= $max)
                     {
                         echo "<span style = 'color: green;'> <h3>Welldone Hero!.</span></h3>";
                     }
                     elseif($max <= $ave)
                     {
-                        echo "<span style = 'color: green;'> <h3>Welldone Hero!.</span></h3>";
+                        echo "<span style = 'color: green;'> <h3>Welldone Hero!</span></h3>";
                     }
-                    elseif ($counter >= $ave)
+                    elseif ($correct >= $ave)
                     {
                         echo "<span style = 'color: orange;'><h3>You scroed averaged.</span></h3>";
                     }
-                    elseif ($min <= $counter)
+                    elseif ($min <= $correct)
                     {
                         echo "<span style = 'color: red;'> <h3>You performed poorly! Retake test.</span></h3>";
                     }
@@ -321,7 +321,7 @@
         {  
             ?>
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="quiz">
-                    <?php foreach ($Questions as $QuestionNo => $Value){ ?>
+                    <?php foreach ($Question as $QuestionNo => $Value){ ?>
 
                         <center><div class = 'container'>
                             <img src="img/AVENGERS LOGO VERSION 2.png" alt="">
