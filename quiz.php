@@ -295,7 +295,7 @@
                     {
                         echo "<span style = 'color: green;'> <h3>Welldone Hero!.</span></h3>";
                     }
-                    elseif($max <= $ave)
+                    elseif ($max <= $ave)
                     {
                         echo "<span style = 'color: green;'> <h3>Welldone Hero!</span></h3>";
                     }
