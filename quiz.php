@@ -9,7 +9,7 @@
     (
 
         1 =>array(
-            'Question' => '<img src="img/01.jpg" alt=""> <br> 1. Both Iron Man and Doctor Strange actors played which identical role outside the MCU?',
+            'Question' => '<img src="images/01.jpg" alt=""> <br> 1. Both Iron Man and Doctor Strange actors played which identical role outside the MCU?',
             'Answers' => array(
                 'A' => 'Willie Wonka',
                 'B' => 'Dracula',
@@ -20,7 +20,7 @@
         ),
 
         2 =>array(
-            'Question' => '<img src="img/02.jpg" alt=""> <br> 2. Before turning whitish-blonde, what was Natasha Romanoff original hair color?',
+            'Question' => '<img src="images/02.jpg" alt=""> <br> 2. Before turning whitish-blonde, what was Natasha Romanoff original hair color?',
             'Answers' => array(
                 'A' => 'Brown',
                 'B' => 'Black',
@@ -31,7 +31,7 @@
         ),
 
         3 =>array(
-            'Question' => '<img src="img/03.jpeg" alt=""> <br> 3. What do you call that gadget which Nick Fury used to contact Captain Marvel?',
+            'Question' => '<img src="images/03.jpeg" alt=""> <br> 3. What do you call that gadget which Nick Fury used to contact Captain Marvel?',
             'Answers' => array(
                 'A' => 'Walkie-Talkie',
                 'B' => 'I-Pad',
@@ -42,7 +42,7 @@
         ),
         
         4 =>array(
-            'Question' => '<img src="img/04.gif" alt=""> <br> 4. Can you recall which fallen hero said "I dont feel so good" during The Snap?',
+            'Question' => '<img src="images/04.gif" alt=""> <br> 4. Can you recall which fallen hero said "I dont feel so good" during The Snap?',
             'Answers' => array(
                 'A' => 'Doctor Strange',
                 'B' => 'Pete Quill',
@@ -53,7 +53,7 @@
         ),
 
         5 =>array(
-            'Question' => '<img src="img/05.jpg" alt=""> <br> 5. This Avenger ally originally belonged to the X-Men team. Do you know who?',
+            'Question' => '<img src="images/05.jpg" alt=""> <br> 5. This Avenger ally originally belonged to the X-Men team. Do you know who?',
             'Answers' => array(
                 'A' => 'J.A.R.V.I.S.',
                 'B' => 'Peggy Carter',
@@ -64,7 +64,7 @@
         ),
 
         6 =>array(
-            'Question' => '<img src="img/06.jpg" alt=""> <br> 6. Which Guardian of the Galaxy did Thor take the time to introduce to Captain America while they were already fighting enemies in "Avengers: Infinity War"?',
+            'Question' => '<img src="images/06.jpg" alt=""> <br> 6. Which Guardian of the Galaxy did Thor take the time to introduce to Captain America while they were already fighting enemies in "Avengers: Infinity War"?',
             'Answers' => array(
                 'A' => 'Nebula',
                 'B' => 'Star-Lord',
@@ -75,7 +75,7 @@
         ),
 
         7 =>array(
-            'Question' => '<img src="img/07.jpg" alt=""> <br> 7. Scarlett Johansson had a "special status" while shooting "Avengers: Age of Ultron." What state was she in at that time?',
+            'Question' => '<img src="images/07.jpg" alt=""> <br> 7. Scarlett Johansson had a "special status" while shooting "Avengers: Age of Ultron." What state was she in at that time?',
             'Answers' => array(
                 'A' => 'Recovering from an accident',
                 'B' => 'Pregnant',
@@ -86,7 +86,7 @@
         ),
 
         8 =>array(
-            'Question' => '<img src="img/08.gif" alt=""> <br> 8. Aside from Thor, who among the original Avengers gang was worthy of handling his hammer?',
+            'Question' => '<img src="images/08.gif" alt=""> <br> 8. Aside from Thor, who among the original Avengers gang was worthy of handling his hammer?',
             'Answers' => array(
                 'A' => 'Captain America',
                 'B' => 'The Hulk',
@@ -97,7 +97,7 @@
         ),
 
         9 =>array(
-            'Question' => '<img src="img/09.png" alt=""> <br> 9. This Avenger friend "hid" in Wakanda. Which one did this in vibranium land?',
+            'Question' => '<img src="images/09.png" alt=""> <br> 9. This Avenger friend "hid" in Wakanda. Which one did this in vibranium land?',
             'Answers' => array(
                 'A' => 'Peter Quill',
                 'B' => 'Scott Lang',
@@ -108,7 +108,7 @@
         ),
         
         10 =>array(
-            'Question' => '<img src="img/10.jpg" alt=""> <br> 10. Vision came from which of the Infinity Stones?',
+            'Question' => '<img src="images/10.jpg" alt=""> <br> 10. Vision came from which of the Infinity Stones?',
             'Answers' => array(
                 'A' => 'Mind Stone ',
                 'B' => 'Time Stone',
@@ -119,7 +119,7 @@
         ),
 
         11 =>array(
-            'Question' => '<img src="img/11.jpg" alt=""> <br> 11. If the reality stone is red and the power stone is purple, what colors are the soul and space stones?',
+            'Question' => '<img src="images/11.jpg" alt=""> <br> 11. If the reality stone is red and the power stone is purple, what colors are the soul and space stones?',
             'Answers' => array(
                 'A' => 'Green and Pink',
                 'B' => 'Black and Green',
@@ -130,7 +130,7 @@
         ),
 
         12 =>array(
-            'Question' => '<img src="img/12.jpg" alt=""> <br> 12. Can you recall which 80s movie our heroes referenced when they traveled back in time in "Avengers: Endgame"?',
+            'Question' => '<img src="images/12.jpg" alt=""> <br> 12. Can you recall which 80s movie our heroes referenced when they traveled back in time in "Avengers: Endgame"?',
             'Answers' => array(
                 'A' => 'Blade Runner',
                 'B' => 'Star Trek',
@@ -141,7 +141,7 @@
         ),
 
         13 =>array(
-            'Question' => '<img src="img/13.jpg" alt=""> <br> 13. She had an obvious haircut in one movie alone. Which hero is this?',
+            'Question' => '<img src="images/13.jpg" alt=""> <br> 13. She had an obvious haircut in one movie alone. Which hero is this?',
             'Answers' => array(
                 'A' => 'Gamora',
                 'B' => 'Maria Hill',
@@ -152,7 +152,7 @@
         ),
 
         14 =>array(
-            'Question' => '<img src="img/21.jpg" alt=""> <br> 14. Can you guess which heavy metal band Tony Stark loves, in relation to being Iron Man?',
+            'Question' => '<img src="images/21.jpg" alt=""> <br> 14. Can you guess which heavy metal band Tony Stark loves, in relation to being Iron Man?',
             'Answers' => array(
                 'A' => 'Metallica ',
                 'B' => 'KISS',
@@ -163,7 +163,7 @@
         ),
 
         15 =>array(
-            'Question' => '<img src="img/15.jpg" alt=""> <br> 15. In the comics, this hero was part of the original Avengers but they rewrote this role in the MCU. Do you know who?',
+            'Question' => '<img src="images/15.jpg" alt=""> <br> 15. In the comics, this hero was part of the original Avengers but they rewrote this role in the MCU. Do you know who?',
             'Answers' => array(
                 'A' => 'Black Panther',
                 'B' => 'Ant-Man',
@@ -174,7 +174,7 @@
         ),
 
         16 =>array(
-            'Question' => '<img src="img/16.jpg" alt=""> <br> 16. Was Thanos Infinity Gauntlet worn on the left hand or the right hand?',
+            'Question' => '<img src="images/16.jpg" alt=""> <br> 16. Was Thanos Infinity Gauntlet worn on the left hand or the right hand?',
             'Answers' => array(
                 'A' => 'Left',
                 'B' => 'Right',
@@ -185,7 +185,7 @@
         ),
 
         17 =>array(
-            'Question' => '<img src="img/17.jpeg" alt=""> <br> 17. What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?',
+            'Question' => '<img src="images/17.jpeg" alt=""> <br> 17. What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?',
             'Answers' => array(
                 'A' => 'Yondu',
                 'B' => 'Drax',
@@ -207,7 +207,7 @@
         ),
 
         19 =>array(
-            'Question' => '<img src="img/19.jpg" alt=""> <br> 19. Whenever Thor is around, which person always reminded him of home?',
+            'Question' => '<img src="images/19.jpg" alt=""> <br> 19. Whenever Thor is around, which person always reminded him of home?',
             'Answers' => array(
                 'A' => 'Valkyrie',
                 'B' => 'Loki ',
@@ -218,7 +218,7 @@
         ),
 
         20 =>array(
-            'Question' => '<img src="img/20.jpg" alt=""> <br> 20. Who is the strongest avenger?',
+            'Question' => '<img src="images/20.jpg" alt=""> <br> 20. Who is the strongest avenger?',
             'Answers' => array(
                 'A' => 'Iron man',
                 'B' => 'Hulk ',
@@ -249,7 +249,7 @@
                 echo "<div class='container'>
                         <h1>Congrats Hero!!!</h1>
                         <div class='img'>
-                            <img src='img/avengers-infinity-war-all-heroes-wallpaper-3840x1200-894_62.jpg' alt='avenger-logo'>
+                            <img src='images/avengers-infinity-war-all-heroes-wallpaper-3840x1200-894_62.jpg' alt='avenger-logo'>
                         </div> 
                     </div>";  
 
