@@ -29,7 +29,7 @@
                     <strong>Number of questions:</strong> 20 <br>
                     <strong>Estimated Time:</strong> 10 minutes <br>
                 </ul>
-                <button ><a href="quiz.php?n=1" class="start">Start Quiz</a></button>
+                <button><a href="quiz.php?n=1" class="start">Start Quiz</a></button>
             </div>
         </main>
 
