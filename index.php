@@ -21,7 +21,7 @@
         <main>
             <div class="container">
                 <h2>Test your knowlege.</h2>
-                <img src="img/marvel studios.jpg" alt="Avengers">
+                <img src="images/marvel studios.jpg" alt="Avengers">
 
                 <h3>This is a mutiple choice quiz about the Marval Universe.</h3>
                 <ul>
